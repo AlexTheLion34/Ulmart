@@ -37,7 +37,7 @@ public class FileProcessor {
 
         int[][] tempResult = new int[numOfChunks][150];
 
-        ExecutorService service = Executors.newFixedThreadPool(100);
+        ExecutorService service = Executors.newFixedThreadPool(10);
         CountDownLatch latch = new CountDownLatch(numOfChunks);
 
         for (int i = 0; i < numOfChunks; i++) {
