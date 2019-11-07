@@ -10,7 +10,9 @@ public class Application {
 
     public static void main(String[] args) {
 
+        System.out.print("Введите путь до файла с данными: ");
         String fileFrom = in.nextLine();
+        System.out.print("Введите путь, по которому будет сохранен результат: ");
         String fileTo = in.nextLine();
 
         FileProcessor processor = new FileProcessor(fileFrom);
